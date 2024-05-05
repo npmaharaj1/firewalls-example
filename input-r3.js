@@ -1,21 +1,21 @@
-function checkBox1() {
-    const checkBox = document.getElementById('checkBox1');
+function checkBox3() {
+    const checkBox = document.getElementById('checkBox3');
 
     function handleCheckboxChange() {
-        GlobalIsChecked1 = checkBox.checked;
+        GlobalIsChecked3 = checkBox.checked;
     }
 
     checkBox.addEventListener('change', handleCheckboxChange);
 }
 
-function submitTAddress1() {
-    Globaltaddress1 = validateAddress(document.getElementById("t-address1").value)
+function submitTAddress3() {
+    Globaltaddress3 = validateAddress(document.getElementById("t-address3").value)
 }
 
-function submitDAddress1() {
-    Globaldaddress1 = validateAddress(document.getElementById("d-address1").value)
+function submitDAddress3() {
+    Globaldaddress3 = validateAddress(document.getElementById("d-address3").value)
 }
 
 function submitPort() {
-    Globalport1 = validatePort(document.getElementById("port1").value)
+    Globalport3 = validatePort(document.getElementById("port3").value)
 }
