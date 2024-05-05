@@ -16,6 +16,6 @@ function submitDAddress3() {
     Globaldaddress3 = validateAddress(document.getElementById("d-address3").value)
 }
 
-function submitPort() {
+function submitPort3() {
     Globalport3 = validatePort(document.getElementById("port3").value)
 }
