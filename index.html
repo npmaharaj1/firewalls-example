@@ -193,9 +193,9 @@
                     <option value="igmp">IGMP</option>
                 </select>
                 <script> // Used outside since function calls in script.js don't work with one large dropdown entity
-                    protocolSelect = document.getElementById('protocol5');
+                    protocolSelect = document.getElementById('protocol5').value;
                     function getSelectedProtocol5() {
-                        const selectedProtocol5 = protocolSelect.value;
+                        const selectedProtocol5 = protocolSelect;
                         // Store to global variable for future use
                         transferToGlobal(selectedProtocol5);
                     }

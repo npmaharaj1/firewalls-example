@@ -65,10 +65,6 @@ function validatePort(port) {
     }
 }
 
-function transferToGlobal(selectedProtocol1) {
-    Globalprotocol1 = selectedProtocol1;
-}
-
 function printout() {
     console.log(GlobalIsChecked1);
     console.log(Globaltaddress1);

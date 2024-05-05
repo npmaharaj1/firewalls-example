@@ -19,3 +19,7 @@ function submitDAddress1() {
 function submitPort() {
     Globalport1 = validatePort(document.getElementById("port1").value)
 }
+
+function transferToGlobal(selectedProtocol1) {
+    Globalprotocol1 = selectedProtocol1;
+}
