@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firewalls Explained</title>
+    <link rel="icon"  type="image/x-icon": href="win-firewall-1.webp">
+    <link rel="stylesheet" href="stylesheet.css">
+    <body style="background-color: black"></body>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script src="input-r1.js"></script>
+    <script src="input-r2.js"></script>
+    <script src="input-r3.js"></script>
+    <script src="input-r4.js"></script>
+    <script src="input-r5.js"></script>
+
+    <h1>Firewalls visual representation</h1>
+    <h2>By Nishant M</h2>
+
+    <!--Row 1-->
+    <table style="width: 100%;">
+        <tr>
+            <th>Allowed?</th>
+            <th>IP Address</th>
+            <th>Protocol</th>
+            <th>Destination</th>
+            <th>Port</th>
+        </tr>
+        <tr>
+            <th>
+                <input id="checkBox1" type="checkbox" onclick="checkBox1()">
+            </th>
+            <th>
+                <input id="t-address1" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitTAddress1()" >Submit</button>
+            </th>
+            <th>
+                <select name="Protocol" id="protocol1">
+                    <option value="icmp">ICMP</option>
+                    <option value="tcp">TCP</option>
+                    <option value="udp">UDP</option>
+                    <option value="raw">RAW</option>
+                    <option value="igmp">IGMP</option>
+                </select>
+                <script> // Used outside since function calls in script.js don't work with one large dropdown entity
+                    protocolSelect = document.getElementById('protocol1');
+                    function getSelectedProtocol() {
+                        const selectedProtocol1 = protocolSelect.value;
+                        // Store to global variable for future use
+                        transferToGlobal(selectedProtocol1);
+                    }
+                    protocolSelect.addEventListener('change', getSelectedProtocol);
+                </script>
+            </th>
+            <th>
+                <input id="d-address1" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitDAddress1()">Submit</button>
+            </th>
+            <th>
+                <input style="width: 30%;" id="port1" type="number">
+                <button style="margin-left: 1%;" onclick="submitPort()">Submit</button>
+            </th>
+        </tr>
+
+        <!--Row 2-->
+        <tr>
+            <th>
+                <input id="checkBox2" type="checkbox" onclick="checkBo2()">
+            </th>
+            <th>
+                <input id="t-address2" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitTAddress2()" >Submit</button>
+            </th>
+            <th>
+                <select name="Protocol" id="protocol2">
+                    <option value="icmp">ICMP</option>
+                    <option value="tcp">TCP</option>
+                    <option value="udp">UDP</option>
+                    <option value="raw">RAW</option>
+                    <option value="igmp">IGMP</option>
+                </select>
+                <script> // Used outside since function calls in script.js don't work with one large dropdown entity
+                    protocolSelect = document.getElementById('protocol2');
+                    function getSelectedProtocol2() {
+                        const selectedProtocol2 = protocolSelect.value;
+                        // Store to global variable for future use
+                        transferToGlobal(selectedProtocol2);
+                    }
+                    protocolSelect.addEventListener('change', getSelectedProtocol2);
+                </script>
+            </th>
+            <th>
+                <input id="d-address2" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitDAddress2()">Submit</button>
+            </th>
+            <th>
+                <input style="width: 30%;" id="port2" type="number">
+                <button style="margin-left: 1%;" onclick="submitPort2()">Submit</button>
+            </th>
+        </tr>
+
+        <!--Row 3-->
+        <tr>
+            <th>
+                <input id="checkBox3" type="checkbox" onclick="checkBox3()">
+            </th>
+            <th>
+                <input id="t-address3" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitTAddress3()" >Submit</button>
+            </th>
+            <th>
+                <select name="Protocol" id="protocol3">
+                    <option value="icmp">ICMP</option>
+                    <option value="tcp">TCP</option>
+                    <option value="udp">UDP</option>
+                    <option value="raw">RAW</option>
+                    <option value="igmp">IGMP</option>
+                </select>
+                <script> // Used outside since function calls in script.js don't work with one large dropdown entity
+                    protocolSelect = document.getElementById('protocol3');
+                    function getSelectedProtocol3() {
+                        const selectedProtocol3 = protocolSelect.value;
+                        // Store to global variable for future use
+                        transferToGlobal(selectedProtocol3);
+                    }
+                    protocolSelect.addEventListener('change', getSelectedProtocol3);
+                </script>
+            </th>
+            <th>
+                <input id="d-address3" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitDAddress3()">Submit</button>
+            </th>
+            <th>
+                <input style="width: 30%;" id="port3" type="number">
+                <button style="margin-left: 1%;" onclick="submitPort3()">Submit</button>
+            </th>
+        </tr>
+
+        <!--Row 4-->
+        <tr>
+            <th>
+                <input id="checkBox4" type="checkbox" onclick="checkBox4()">
+            </th>
+            <th>
+                <input id="t-address4" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitTAddress4()" >Submit</button>
+            </th>
+            <th>
+                <select name="Protocol" id="protocol4">
+                    <option value="icmp">ICMP</option>
+                    <option value="tcp">TCP</option>
+                    <option value="udp">UDP</option>
+                    <option value="raw">RAW</option>
+                    <option value="igmp">IGMP</option>
+                </select>
+                <script> // Used outside since function calls in script.js don't work with one large dropdown entity
+                    protocolSelect = document.getElementById('protocol4');
+                    function getSelectedProtocol4() {
+                        const selectedProtocol4 = protocolSelect.value;
+                        // Store to global variable for future use
+                        transferToGlobal(selectedProtocol4);
+                    }
+                    protocolSelect.addEventListener('change', getSelectedProtocol4);
+                </script>
+            </th>
+            <th>
+                <input id="d-address4" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitDAddress4()">Submit</button>
+            </th>
+            <th>
+                <input style="width: 30%;" id="port4" type="number">
+                <button style="margin-left: 1%;" onclick="submitPort4()">Submit</button>
+            </th>
+        </tr>
+
+        <!--Row 5-->
+        <tr>
+            <th>
+                <input id="checkBox5" type="checkbox" onclick="checkBox5()">
+            </th>
+            <th>
+                <input id="t-address5" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitTAddress5()" >Submit</button>
+            </th>
+            <th>
+                <select name="Protocol" id="protocol5">
+                    <option value="icmp">ICMP</option>
+                    <option value="tcp">TCP</option>
+                    <option value="udp">UDP</option>
+                    <option value="raw">RAW</option>
+                    <option value="igmp">IGMP</option>
+                </select>
+                <script> // Used outside since function calls in script.js don't work with one large dropdown entity
+                    protocolSelect = document.getElementById('protocol5');
+                    function getSelectedProtocol5() {
+                        const selectedProtocol5 = protocolSelect.value;
+                        // Store to global variable for future use
+                        transferToGlobal(selectedProtocol5);
+                    }
+                    protocolSelect.addEventListener('change', getSelectedProtoco5);
+                </script>
+            </th>
+            <th>
+                <input id="d-address5" type="text" placeholder="x.x.x.x">
+                <button style="margin-left: 1%;" onclick="submitDAddress5()">Submit</button>
+            </th>
+            <th>
+                <input style="width: 30%;" id="port5" type="number">
+                <button style="margin-left: 1%;" onclick="submitPort5()">Submit</button>
+            </th>
+        </tr>
+    </table>
+
+    <!--Printout Button-->
+    <button onclick="printout()">Print everything!</button>
+</body>
+</html>
