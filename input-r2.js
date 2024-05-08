@@ -4,7 +4,11 @@ function checkBox2() {
     function handleCheckboxChange() {
         GlobalIsChecked2 = checkBox.checked;
     }
-
+    if (GlobalIsChecked2 == false) {
+        document.getElementById('moving-text').innerHTML = Globaltaddress2;
+    } else {
+        document.getElementById('moving-text').innerHTML = null;
+    }
     checkBox.addEventListener('change', handleCheckboxChange);
 }
 

@@ -104,3 +104,7 @@ function printout() {
     console.log(Globaldaddress5);
     console.log(Globalport5);
 }
+
+if (GlobalIsChecked1 == true || GlobalIsChecked2 == true || GlobalIsChecked3 == true || GlobalIsChecked4 == true || GlobalIsChecked5 == true) {
+    document.getElementById('moving-text').innerHTML = Globaltaddress1;
+}

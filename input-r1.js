@@ -4,7 +4,11 @@ function checkBox1() {
     function handleCheckboxChange() {
         GlobalIsChecked1 = checkBox.checked;
     }
-
+    if (GlobalIsChecked1 == false) {
+        document.getElementById('moving-text').innerHTML = Globaltaddress1;
+    } else {
+        document.getElementById('moving-text').innerHTML = null;
+    }
     checkBox.addEventListener('change', handleCheckboxChange);
 }
 
@@ -22,10 +26,4 @@ function submitPort() {
 
 function transferToGlobal(selectedProtocol1) {
     Globalprotocol1 = selectedProtocol1;
-}
-
-function address1() {
-    if (GlobalIsChecked1) {
-        document.getElementById('moving-text').innerHTML = Globaltaddress1;
-    }
 }

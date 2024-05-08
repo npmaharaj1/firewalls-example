@@ -14,7 +14,7 @@ body {
 
 #moving-text {
     display:block;
-    animation: bouncetext 4s ease-in-out infinite;
+    animation: bouncetext 2s ease-in-out infinite;
   }
   
   @keyframes bouncetext {
