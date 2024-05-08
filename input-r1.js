@@ -24,4 +24,8 @@ function transferToGlobal(selectedProtocol1) {
     Globalprotocol1 = selectedProtocol1;
 }
 
-document.getElementById("myText").innerHTML = number
+function address1() {
+    if (GlobalIsChecked1) {
+        document.getElementById('moving-text').innerHTML = Globaltaddress1;
+    }
+}
