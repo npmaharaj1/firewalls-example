@@ -6,3 +6,21 @@ table, th, td {
     color: white;
     border: 1px solid white;
 }
+
+#text-container {
+    /* Optional: Set the width of the container */
+    width: 500px;
+    overflow: hidden;
+  }
+  
+#moving-text {
+    display: inline-block;
+    animation: bouncetext 1s linear infinite;
+}
+  
+  @keyframes bouncetext {
+    0% { transform: translateX(100%); }
+    50% { transform: translateX(0%); }  /* Text reaches the center at 50% */
+    100% { transform: translateX(100%); }
+  }
+  
