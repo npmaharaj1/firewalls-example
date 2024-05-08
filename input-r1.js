@@ -23,3 +23,5 @@ function submitPort() {
 function transferToGlobal(selectedProtocol1) {
     Globalprotocol1 = selectedProtocol1;
 }
+
+document.getElementById("myText").innerHTML = number

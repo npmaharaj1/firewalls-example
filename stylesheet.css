@@ -13,12 +13,12 @@ body {
 }
 
 #moving-text {
-    display: block;
-    animation: bouncetext 1s ease-in-out infinite;
+    display:block;
+    animation: bouncetext 3s ease-in-out infinite;
   }
   
   @keyframes bouncetext {
-    0% { transform: translateX(90%); }
-    50% { transform: translateX(0%); }
-    100% { transform: translateX(90%); }
+    0% { transform: translateX(0%); }
+    50% { transform: translateX(98%); }  /* Text reaches the center at 50% */
+    100% { transform: translateX(0%); }
   }
