@@ -72,7 +72,7 @@ function printout() {
     console.log(Globaldaddress1);
     console.log(Globalport1);
 
-    console.log("")
+    console.log(" ")
 
     console.log(GlobalIsChecked2);
     console.log(Globaltaddress2);
@@ -80,7 +80,7 @@ function printout() {
     console.log(Globaldaddress2);
     console.log(Globalport2);
 
-    console.log("")
+    console.log(" ")
 
     console.log(GlobalIsChecked3);
     console.log(Globaltaddress3);
@@ -88,7 +88,7 @@ function printout() {
     console.log(Globaldaddress3);
     console.log(Globalport3);
 
-    console.log("")
+    console.log(" ")
 
     console.log(GlobalIsChecked4);
     console.log(Globaltaddress4);
