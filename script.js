@@ -105,6 +105,18 @@ function printout() {
     console.log(Globalport5);
 }
 
-if (GlobalIsChecked1 == true || GlobalIsChecked2 == true || GlobalIsChecked3 == true || GlobalIsChecked4 == true || GlobalIsChecked5 == true) {
+if (GlobalIsChecked1 == true) {
     document.getElementById('moving-text').innerHTML = Globaltaddress1;
+}
+if (GlobalIsChecked2 == true) {
+    document.getElementById('moving-text2').innerHTML = Globaltaddress2;
+}
+if (GlobalIsChecked3 == true) {
+    document.getElementById('moving-text3').innerHTML = Globaltaddress3;
+}
+if (GlobalIsChecked4 == true) {
+    document.getElementById('moving-text4').innerHTML = Globaltaddress4;
+}
+if (GlobalIsChecked5 == true) {
+    document.getElementById('moving-text5').innerHTML = Globaltaddress5;
 }

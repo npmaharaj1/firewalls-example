@@ -5,9 +5,9 @@ function checkBox1() {
         GlobalIsChecked1 = checkBox.checked;
     }
     if (GlobalIsChecked1 == false) {
-        document.getElementById('moving-text').innerHTML = Globaltaddress1;
+        document.getElementById('moving-text1').innerHTML = Globaltaddress1;
     } else {
-        document.getElementById('moving-text').innerHTML = null;
+        document.getElementById('moving-text1').innerHTML = null;
     }
     checkBox.addEventListener('change', handleCheckboxChange);
 }

@@ -12,11 +12,31 @@ body {
     overflow: hidden;
 }
 
-#moving-text {
-    display:block;
+#moving-text1 {
+    display: block;
     animation: bouncetext 2s ease-in-out infinite;
-  }
-  
+}
+
+#moving-text2 {
+    display: block;
+    animation: bouncetext 2s ease-in-out infinite;
+}
+
+#moving-text3 {
+    display: block;
+    animation: bouncetext 2s ease-in-out infinite;
+}
+
+#moving-text4 {
+    display: block;
+    animation: bouncetext 2s ease-in-out infinite;
+}
+
+#moving-text5 {
+    display: block;
+    animation: bouncetext 2s ease-in-out infinite;
+}
+
   @keyframes bouncetext {
     0% { transform: translateX(0%); }
     100% { transform: translateX(49%); }  /* Text reaches the center at 50% */
