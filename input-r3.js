@@ -5,11 +5,11 @@ function checkBox3() {
         GlobalIsChecked3 = checkBox.checked;
     }
     if (GlobalIsChecked3 == false) {
-        document.getElementById('moving-text3').innerHTML = Globalprotocol3;
+        document.getElementById('moving-text3').innerHTML = Globaltaddress3;
         document.getElementById('moving-text-half3').innerHTML = null;
     } else {
         document.getElementById('moving-text3').innerHTML = null;
-        document.getElementById('moving-text-half3').innerHTML = Globalprotocol3;
+        document.getElementById('moving-text-half3').innerHTML = Globaltaddress3;
     }
     checkBox.addEventListener('change', handleCheckboxChange);
 }
@@ -24,8 +24,4 @@ function submitDAddress3() {
 
 function submitPort3() {
     Globalport3 = validatePort(document.getElementById("port3").value)
-}
-
-function transferToGlobal(selectedProtocol3) {
-    Globalprotocol3 = selectedProtocol3;
 }
