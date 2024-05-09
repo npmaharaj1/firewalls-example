@@ -130,3 +130,10 @@ if (GlobalIsChecked5 == true) {
     document.getElementById('moving-text5').innerHTML = null;
     document.getElementById('moving-text-half5').innerHTML = Globaltaddress5;
 }
+window.onload = function(){
+    document.getElementById('destinationAddress1').innerHTML = Globaldaddress1;
+    document.getElementById('destinationAddress2').innerHTML = Globaldaddress2;
+    document.getElementById('destinationAddress3').innerHTML = Globaldaddress3;
+    document.getElementById('destinationAddress4').innerHTML = Globaldaddress4;
+    document.getElementById('destinationAddress5').innerHTML = Globaldaddress5;
+};
