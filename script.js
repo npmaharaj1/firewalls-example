@@ -106,7 +106,11 @@ function printout() {
 }
 
 if (GlobalIsChecked1 == true) {
-    document.getElementById('moving-text').innerHTML = Globaltaddress1;
+    document.getElementById('moving-text1').innerHTML = Globaltaddress1;
+    document.getElementById('moving-text15').innerHTML = null;
+} else {
+    document.getElementById('moving-text1').innerHTML = null;
+    document.getElementById('moving-text15').innerHTML = Globaltaddress1;
 }
 if (GlobalIsChecked2 == true) {
     document.getElementById('moving-text2').innerHTML = Globaltaddress2;

@@ -17,6 +17,11 @@ body {
     animation: bouncetext 2s ease-in-out infinite;
 }
 
+#moving-text15 {
+    display: block;
+    animation: bouncetextwall 2s ease-in-out infinite;
+}
+
 #moving-text2 {
     display: block;
     animation: bouncetext 2s ease-in-out infinite;
@@ -38,6 +43,11 @@ body {
 }
 
   @keyframes bouncetext {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(99%); }  /* Text reaches the center at 50% */
+  }
+
+  @keyframes bouncetextwall {
     0% { transform: translateX(0%); }
     100% { transform: translateX(49%); }  /* Text reaches the center at 50% */
   }

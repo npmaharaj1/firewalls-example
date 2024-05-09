@@ -6,8 +6,10 @@ function checkBox1() {
     }
     if (GlobalIsChecked1 == false) {
         document.getElementById('moving-text1').innerHTML = Globaltaddress1;
+        document.getElementById('moving-text15').innerHTML = null;
     } else {
         document.getElementById('moving-text1').innerHTML = null;
+        document.getElementById('moving-text15').innerHTML = Globaltaddress1;
     }
     checkBox.addEventListener('change', handleCheckboxChange);
 }
