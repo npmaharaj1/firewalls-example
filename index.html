@@ -7,6 +7,13 @@
     <link rel="icon"  type="image/x-icon": href="win-firewall-1.webp">
     <link rel="stylesheet" href="stylesheet.css">
     <body style="background-color: black"></body>
+    
+    <script src="script.js"></script>
+    <script src="input-r1.js"></script>
+    <script src="input-r2.js"></script>
+    <script src="input-r3.js"></script>
+    <script src="input-r4.js"></script>
+    <script src="input-r5.js"></script>
 </head>
 <body>
     <h1 style="margin-left: 2%;">Firewalls visual representation</h1>
@@ -30,23 +37,13 @@
                 <button style="margin-left: 1%;" onclick="submitTAddress1()" >Submit</button>
             </th>
             <th>
-                <select name="Protocol" id="protocol1">
+                <select name="Protocol" id="protocol1" onchange="">
                     <option value="ICMP">ICMP</option>
                     <option value="TCP" selected>TCP</option>
                     <option value="UDP">UDP</option>
                     <option value="RAW">RAW</option>
                     <option value="IGMP">IGMP</option>
                 </select>
-                <script> // Used outside since function calls in script.js don't work with one large dropdown entity
-                    protocolSelect = document.getElementById('protocol1');
-                    function getSelectedProtocol() {
-                        selectedProtocol1 = protocolSelect;
-                        console.log(selectedProtocol1)
-                        // Store to global variable for future use
-                        // transferToGlobal(selectedProtocol1);
-                    }
-                    protocolSelect.addEventListener('change', getSelectedProtocol);
-                </script>
             </th>
             <th>
                 <input id="d-address1" type="text" placeholder="192.168.1.168">
@@ -224,12 +221,5 @@
     <div id="moving-text-half4" style="color: white; margin: 1%;"></div>
     <div id="moving-text5" style="color: white; margin: 1%;"></div>
     <div id="moving-text-half5" style="color: white; margin: 1%;"></div>
-
-    <script src="script.js"></script>
-    <script src="input-r1.js"></script>
-    <script src="input-r2.js"></script>
-    <script src="input-r3.js"></script>
-    <script src="input-r4.js"></script>
-    <script src="input-r5.js"></script>
 </body>
 </html>

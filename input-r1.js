@@ -31,3 +31,7 @@ function transferToGlobal(selectedProtocol1) {
     console.log(Globalprotocol1);
     Globalprotocol1 = selectedProtocol1;
 }
+
+function submitProtocol() {
+    Globalprotocol1 = document.getElementById('protocol1').value;
+}
