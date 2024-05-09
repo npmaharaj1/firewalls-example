@@ -14,40 +14,60 @@ body {
 
 #moving-text1 {
     display: block;
-    animation: bouncetext 2s ease-in-out infinite;
+    animation: bouncetext 4s ease-in-out infinite;
 }
 
-#moving-text15 {
+#moving-text-half1 {
     display: block;
-    animation: bouncetextwall 2s ease-in-out infinite;
+    animation: bouncetextwall 4s ease-in-out infinite;
 }
 
 #moving-text2 {
     display: block;
-    animation: bouncetext 2s ease-in-out infinite;
+    animation: bouncetext 4s ease-in-out infinite;
+}
+
+#moving-text-half2 {
+    display: block;
+    animation: bouncetextwall 4s ease-in-out infinite;
 }
 
 #moving-text3 {
     display: block;
-    animation: bouncetext 2s ease-in-out infinite;
+    animation: bouncetext 4s ease-in-out infinite;
+}
+
+#moving-text-half3 {
+    display: block;
+    animation: bouncetextwall 4s ease-in-out infinite;
 }
 
 #moving-text4 {
     display: block;
-    animation: bouncetext 2s ease-in-out infinite;
+    animation: bouncetext 4s ease-in-out infinite;
+}
+
+#moving-text-half4 {
+    display: block;
+    animation: bouncetextwall 4s ease-in-out infinite;
 }
 
 #moving-text5 {
     display: block;
-    animation: bouncetext 2s ease-in-out infinite;
+    animation: bouncetext 4s ease-in-out infinite;
 }
 
-  @keyframes bouncetext {
+#moving-text-half5 {
+    display: block;
+    animation: bouncetextwall 4s ease-in-out infinite;
+}
+
+@keyframes bouncetext {
     0% { transform: translateX(0%); }
     100% { transform: translateX(99%); }  /* Text reaches the center at 50% */
-  }
+}
 
-  @keyframes bouncetextwall {
+@keyframes bouncetextwall {
     0% { transform: translateX(0%); }
-    100% { transform: translateX(49%); }  /* Text reaches the center at 50% */
-  }
+    100% { transform: translateX(44%); }  /* Text reaches the center at 50% */
+}

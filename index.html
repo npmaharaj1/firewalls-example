@@ -31,18 +31,19 @@
             </th>
             <th>
                 <select name="Protocol" id="protocol1">
-                    <option value="icmp">ICMP</option>
-                    <option value="tcp" selected>TCP</option>
-                    <option value="udp">UDP</option>
-                    <option value="raw">RAW</option>
-                    <option value="igmp">IGMP</option>
+                    <option value="ICMP">ICMP</option>
+                    <option value="TCP" selected>TCP</option>
+                    <option value="UDP">UDP</option>
+                    <option value="RAW">RAW</option>
+                    <option value="IGMP">IGMP</option>
                 </select>
                 <script> // Used outside since function calls in script.js don't work with one large dropdown entity
                     protocolSelect = document.getElementById('protocol1');
                     function getSelectedProtocol() {
-                        const selectedProtocol1 = protocolSelect.value;
+                        selectedProtocol1 = protocolSelect;
+                        console.log(selectedProtocol1)
                         // Store to global variable for future use
-                        transferToGlobal(selectedProtocol1);
+                        // transferToGlobal(selectedProtocol1);
                     }
                     protocolSelect.addEventListener('change', getSelectedProtocol);
                 </script>
@@ -68,11 +69,11 @@
             </th>
             <th>
                 <select name="Protocol" id="protocol2">
-                    <option value="icmp" selected>ICMP</option>
-                    <option value="tcp">TCP</option>
-                    <option value="udp">UDP</option>
-                    <option value="raw">RAW</option>
-                    <option value="igmp">IGMP</option>
+                    <option value="ICMP" selected>ICMP</option>
+                    <option value="TCP">TCP</option>
+                    <option value="UDP">UDP</option>
+                    <option value="RAW">RAW</option>
+                    <option value="IGMP">IGMP</option>
                 </select>
                 <script> // Used outside since function calls in script.js don't work with one large dropdown entity
                     protocolSelect = document.getElementById('protocol2');
@@ -105,11 +106,11 @@
             </th>
             <th>
                 <select name="Protocol" id="protocol3">
-                    <option value="icmp">ICMP</option>
-                    <option value="tcp">TCP</option>
-                    <option value="udp" selected>UDP</option>
-                    <option value="raw">RAW</option>
-                    <option value="igmp">IGMP</option>
+                    <option value="ICMP">ICMP</option>
+                    <option value="TCP">TCP</option>
+                    <option value="UDP" selected>UDP</option>
+                    <option value="RAW">RAW</option>
+                    <option value="IGMP">IGMP</option>
                 </select>
                 <script> // Used outside since function calls in script.js don't work with one large dropdown entity
                     protocolSelect = document.getElementById('protocol3');
@@ -142,11 +143,11 @@
             </th>
             <th>
                 <select name="Protocol" id="protocol4">
-                    <option value="icmp">ICMP</option>
-                    <option value="tcp">TCP</option>
-                    <option value="udp">UDP</option>
-                    <option value="raw" selected>RAW</option>
-                    <option value="igmp">IGMP</option>
+                    <option value="ICMP">ICMP</option>
+                    <option value="TCP">TCP</option>
+                    <option value="UDP">UDP</option>
+                    <option value="RAW" selected>RAW</option>
+                    <option value="IGMP">IGMP</option>
                 </select>
                 <script> // Used outside since function calls in script.js don't work with one large dropdown entity
                     protocolSelect = document.getElementById('protocol4');
@@ -179,11 +180,11 @@
             </th>
             <th>
                 <select name="Protocol" id="protocol5">
-                    <option value="icmp">ICMP</option>
-                    <option value="tcp">TCP</option>
-                    <option value="udp">UDP</option>
-                    <option value="raw">RAW</option>
-                    <option value="igmp" selected>IGMP</option>
+                    <option value="ICMP">ICMP</option>
+                    <option value="TCP">TCP</option>
+                    <option value="UDP">UDP</option>
+                    <option value="RAW">RAW</option>
+                    <option value="IGMP" selected>IGMP</option>
                 </select>
                 <script> // Used outside since function calls in script.js don't work with one large dropdown entity
                     protocolSelect = document.getElementById('protocol5');
@@ -208,12 +209,21 @@
 
     <!--Printout Button-->
     <!-- <button onclick="printout()">Print everything!</button> -->
+
+    <img src="assets/images/firewall.png" style="position: absolute; top: 50%; left: 44%; z-index: 0;">
+
+    <img src="assets/images/computer.png" style="position: absolute; z-index: 0;">
+
     <div id="moving-text1" style="color: white; margin: 1%; margin-top: 20%;"></div>
-    <div id="moving-text15" style="color: white; margin: 1%; margin-top: 20%;"></div>
+    <div id="moving-text-half1" style="color: white; margin: 1%;"></div>
     <div id="moving-text2" style="color: white; margin: 1%;"></div>
+    <div id="moving-text-half2" style="color: white; margin: 1%;"></div>
     <div id="moving-text3" style="color: white; margin: 1%;"></div>
+    <div id="moving-text-half3" style="color: white; margin: 1%;"></div>
     <div id="moving-text4" style="color: white; margin: 1%;"></div>
+    <div id="moving-text-half4" style="color: white; margin: 1%;"></div>
     <div id="moving-text5" style="color: white; margin: 1%;"></div>
+    <div id="moving-text-half5" style="color: white; margin: 1%;"></div>
 
     <script src="script.js"></script>
     <script src="input-r1.js"></script>
