@@ -4,13 +4,14 @@ function checkBox1() {
     function handleCheckboxChange() {
         GlobalIsChecked1 = checkBox.checked;
     }
-    document.getElementById('sourceAddress1').innerHTML = Globaltaddress1;
-
+    if (GlobalIsChecked1 == false) {
+        document.getElementById('moving-text1').innerHTML = GlobalProtocol2;
+        document.getElementById('moving-text-half1').innerHTML = null;
+    } else {
+        document.getElementById('moving-text1').innerHTML = null;
+        document.getElementById('moving-text-half1').innerHTML = GlobalProtocol2;
+    }
     checkBox.addEventListener('change', handleCheckboxChange);
-}
-
-function submitProtocol() {
-    Globalprotocol1 = document.getElementById('protocol1').value;
 }
 
 function submitTAddress1() {

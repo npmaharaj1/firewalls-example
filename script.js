@@ -101,11 +101,11 @@ if (GlobalIsChecked5 == true) {
     document.getElementById('moving-text-half5').innerHTML = GlobalProtocol5;
 }
 window.onload = function() {
-    document.getElementById('destinationAddress1').innerHTML = Globaldaddress1;
-    document.getElementById('destinationAddress2').innerHTML = Globaldaddress2;
-    document.getElementById('destinationAddress3').innerHTML = Globaldaddress3;
-    document.getElementById('destinationAddress4').innerHTML = Globaldaddress4;
-    document.getElementById('destinationAddress5').innerHTML = Globaldaddress5;
+    document.getElementById('destinationAddress1').innerHTML = Globaldaddress1 + ":" + Globalport1;
+    document.getElementById('destinationAddress2').innerHTML = Globaldaddress2 + ":" + Globalport2;
+    document.getElementById('destinationAddress3').innerHTML = Globaldaddress3 + ":" + Globalport3;
+    document.getElementById('destinationAddress4').innerHTML = Globaldaddress4 + ":" + Globalport4;
+    document.getElementById('destinationAddress5').innerHTML = Globaldaddress5 + ":" + Globalport5;
     
     document.getElementById('sourceAddress1').innerHTML = Globaltaddress1;
     document.getElementById('sourceAddress2').innerHTML = Globaltaddress2;
