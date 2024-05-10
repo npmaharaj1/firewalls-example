@@ -65,41 +65,6 @@ function validatePort(port) {
     }
 }
 
-function printout() {
-    console.log(GlobalIsChecked1);
-    console.log(Globaltaddress1);
-    console.log(Globaldaddress1);
-    console.log(Globalport1);
-
-    console.log(" ")
-
-    console.log(GlobalIsChecked2);
-    console.log(Globaltaddress2);
-    console.log(Globaldaddress2);
-    console.log(Globalport2);
-
-    console.log(" ")
-
-    console.log(GlobalIsChecked3);
-    console.log(Globaltaddress3);
-    console.log(Globaldaddress3);
-    console.log(Globalport3);
-
-    console.log(" ")
-
-    console.log(GlobalIsChecked4);
-    console.log(Globaltaddress4);
-    console.log(Globaldaddress4);
-    console.log(Globalport4);
-
-    console.log(" ")
-
-    console.log(GlobalIsChecked5);
-    console.log(Globaltaddress5);
-    console.log(Globaldaddress5);
-    console.log(Globalport5);
-}
-
 if (GlobalIsChecked1 == true) {
     document.getElementById('moving-text1').innerHTML = GlobalProtocol1;
     document.getElementById('moving-text-half1').innerHTML = null;

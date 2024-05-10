@@ -1,184 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firewalls Explained</title>
-    <link rel="icon"  type="image/x-icon": href="win-firewall-1.webp">
-    <link rel="stylesheet" href="stylesheet.css">
-    <body style="background-color: black"></body>
-    
-    <script src="script.js" defer></script>
-    <script src="input-r1.js" defer></script>
-    <script src="input-r2.js" defer></script>
-    <script src="input-r3.js" defer></script>
-    <script src="input-r4.js" defer></script>
-    <script src="input-r5.js" defer></script>
-</head>
-<body>
-    <h1 style="margin-left: 2%;">Firewalls visual representation</h1>
-    <h2 style="margin-left: 2%;">By Nishant M</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Firewalls Explained</title>
+        <link rel="icon"  type="image/x-icon": href="win-firewall-1.webp">
+        <link rel="stylesheet" href="stylesheet.css">
+        <body style="background-color: black"></body>
 
-    <!--Row 1-->
-    <table style="width: 100%;">
-        <tr>
-            <th>Allowed?</th>
-            <th>IP Address</th>
-            <th>Protocol</th>
-            <th>Destination</th>
-            <th>Port</th>
-        </tr>
-        <tr>
-            <th>
-                <input id="checkBox1" type="checkbox" onclick="checkBox1()">
-            </th>
-            <th>
-                <input id="t-address1" type="text" placeholder="192.168.1.89">
-                <button style="margin-left: 1%;" onclick="submitTAddress1()" >Submit</button>
-            </th>
-            <th>
-                <div id="ICMP" style="color: white; margin: 3%;"></div>
-            </th>
-            <th>
-                <input id="d-address1" type="text" placeholder="192.168.1.168">
-                <button style="margin-left: 1%;" onclick="submitDAddress1()">Submit</button>
-            </th>
-            <th>
-                <input style="width: 30%;" id="port1" type="number" placeholder="8096">
-                <button style="margin-left: 1%;" onclick="submitPort()">Submit</button>
-            </th>
-        </tr>
+        <script src="script.js" defer></script>
+        <script src="input-r1.js" defer></script>
+        <script src="input-r2.js" defer></script>
+        <script src="input-r3.js" defer></script>
+        <script src="input-r4.js" defer></script>
+        <script src="input-r5.js" defer></script>
+    </head>
+    <body>
+        <h1 style="margin-left: 2%;">Firewalls visual representation</h1>
+        <h2 style="margin-left: 2%;">By Nishant M</h2>
 
-        <!--Row 2-->
-        <tr>
-            <th>
-                <input id="checkBox2" type="checkbox" onclick="checkBox2()">
-            </th>
-            <th>
-                <input id="t-address2" type="text" placeholder="10.1.1.34">
-                <button style="margin-left: 1%;" onclick="submitTAddress2()" >Submit</button>
-            </th>
-            <th>
-                <div id="TCP" style="color: white; margin: 3%;"></div>
-            </th>
-            <th>
-                <input id="d-address2" type="text" placeholder="10.1.1.167">
-                <button style="margin-left: 1%;" onclick="submitDAddress2()">Submit</button>
-            </th>
-            <th>
-                <input style="width: 30%;" id="port2" type="number" placeholder="80">
-                <button style="margin-left: 1%;" onclick="submitPort2()">Submit</button>
-            </th>
-        </tr>
+        <!--Row 1-->
+        <table style="width: 100%;">
+            <tr>
+                <th>Allowed?</th>
+                <th>IP Address</th>
+                <th>Protocol</th>
+                <th>Destination</th>
+                <th>Port</th>
+            </tr>
+            <tr>
+                <th>
+                    <input id="checkBox1" type="checkbox" onclick="checkBox1()">
+                </th>
+                <th>
+                    <input id="t-address1" type="text" placeholder="192.168.1.89">
+                    <button style="margin-left: 1%;" onclick="submitTAddress1()" >Submit</button>
+                </th>
+                <th>
+                    <div id="ICMP" style="color: white; margin: 3%;"></div>
+                </th>
+                <th>
+                    <input id="d-address1" type="text" placeholder="192.168.1.168">
+                    <button style="margin-left: 1%;" onclick="submitDAddress1()">Submit</button>
+                </th>
+                <th>
+                    <input style="width: 30%;" id="port1" type="number" placeholder="8096">
+                    <button style="margin-left: 1%;" onclick="submitPort()">Submit</button>
+                </th>
+            </tr>
 
-        <!--Row 3-->
-        <tr>
-            <th>
-                <input id="checkBox3" type="checkbox" onclick="checkBox3()" checked>
-            </th>
-            <th>
-                <input id="t-address3" type="text" placeholder="192.168.4.23">
-                <button style="margin-left: 1%;" onclick="submitTAddress3()" >Submit</button>
-            </th>
-            <th>
-                <div id="IGMP" style="color: white; margin: 3%;"></div>
-            </th>
-            <th>
-                <input id="d-address3" type="text" placeholder="192.168.4.98">
-                <button style="margin-left: 1%;" onclick="submitDAddress3()">Submit</button>
-            </th>
-            <th>
-                <input style="width: 30%;" id="port3" type="number" placeholder="5555">
-                <button style="margin-left: 1%;" onclick="submitPort3()">Submit</button>
-            </th>
-        </tr>
+            <!--Row 2-->
+            <tr>
+                <th>
+                    <input id="checkBox2" type="checkbox" onclick="checkBox2()">
+                </th>
+                <th>
+                    <input id="t-address2" type="text" placeholder="10.1.1.34">
+                    <button style="margin-left: 1%;" onclick="submitTAddress2()" >Submit</button>
+                </th>
+                <th>
+                    <div id="TCP" style="color: white; margin: 3%;"></div>
+                </th>
+                <th>
+                    <input id="d-address2" type="text" placeholder="10.1.1.167">
+                    <button style="margin-left: 1%;" onclick="submitDAddress2()">Submit</button>
+                </th>
+                <th>
+                    <input style="width: 30%;" id="port2" type="number" placeholder="80">
+                    <button style="margin-left: 1%;" onclick="submitPort2()">Submit</button>
+                </th>
+            </tr>
 
-        <!--Row 4-->
-        <tr>
-            <th>
-                <input id="checkBox4" type="checkbox" onclick="checkBox4()">
-            </th>
-            <th>
-                <input id="t-address4" type="text" placeholder="10.13.37.6">
-                <button style="margin-left: 1%;" onclick="submitTAddress4()" >Submit</button>
-            </th>
-            <th>
-                <div id="RAW" style="color: white; margin: 3%;"></div>
-            </th>
-            <th>
-                <input id="d-address4" type="text" placeholder="10.13.37.98">
-                <button style="margin-left: 1%;" onclick="submitDAddress4()">Submit</button>
-            </th>
-            <th>
-                <input style="width: 30%;" id="port4" type="number" placeholder="8563">
-                <button style="margin-left: 1%;" onclick="submitPort4()">Submit</button>
-            </th>
-        </tr>
+            <!--Row 3-->
+            <tr>
+                <th>
+                    <input id="checkBox3" type="checkbox" onclick="checkBox3()" checked>
+                </th>
+                <th>
+                    <input id="t-address3" type="text" placeholder="192.168.4.23">
+                    <button style="margin-left: 1%;" onclick="submitTAddress3()" >Submit</button>
+                </th>
+                <th>
+                    <div id="IGMP" style="color: white; margin: 3%;"></div>
+                </th>
+                <th>
+                    <input id="d-address3" type="text" placeholder="192.168.4.98">
+                    <button style="margin-left: 1%;" onclick="submitDAddress3()">Submit</button>
+                </th>
+                <th>
+                    <input style="width: 30%;" id="port3" type="number" placeholder="5555">
+                    <button style="margin-left: 1%;" onclick="submitPort3()">Submit</button>
+                </th>
+            </tr>
 
-        <!--Row 5-->
-        <tr>
-            <th>
-                <input id="checkBox5" type="checkbox" onclick="checkBox5()" checked>
-            </th>
-            <th>
-                <input id="t-address5" type="text" placeholder="10.34.23.43">
-                <button style="margin-left: 1%;" onclick="submitTAddress5()" >Submit</button>
-            </th>
-            <th>
-                <div id="UDP" style="color: white; margin: 3%;"></div>
-            </th>
-            <th>
-                <input id="d-address5" type="text" placeholder="10.34.23.198">
-                <button style="margin-left: 1%;" onclick="submitDAddress5()">Submit</button>
-            </th>
-            <th>
-                <input style="width: 30%;" id="port5" type="number" placeholder="11111">
-                <button style="margin-left: 1%;" onclick="submitPort5()">Submit</button>
-            </th>
-        </tr>
-    </table>
+            <!--Row 4-->
+            <tr>
+                <th>
+                    <input id="checkBox4" type="checkbox" onclick="checkBox4()">
+                </th>
+                <th>
+                    <input id="t-address4" type="text" placeholder="10.13.37.6">
+                    <button style="margin-left: 1%;" onclick="submitTAddress4()" >Submit</button>
+                </th>
+                <th>
+                    <div id="RAW" style="color: white; margin: 3%;"></div>
+                </th>
+                <th>
+                    <input id="d-address4" type="text" placeholder="10.13.37.98">
+                    <button style="margin-left: 1%;" onclick="submitDAddress4()">Submit</button>
+                </th>
+                <th>
+                    <input style="width: 30%;" id="port4" type="number" placeholder="8563">
+                    <button style="margin-left: 1%;" onclick="submitPort4()">Submit</button>
+                </th>
+            </tr>
 
-    <!--Printout Button-->
-    <!-- <button onclick="printout()">Print everything!</button> -->
+            <!--Row 5-->
+            <tr>
+                <th>
+                    <input id="checkBox5" type="checkbox" onclick="checkBox5()" checked>
+                </th>
+                <th>
+                    <input id="t-address5" type="text" placeholder="10.34.23.43">
+                    <button style="margin-left: 1%;" onclick="submitTAddress5()" >Submit</button>
+                </th>
+                <th>
+                    <div id="UDP" style="color: white; margin: 3%;"></div>
+                </th>
+                <th>
+                    <input id="d-address5" type="text" placeholder="10.34.23.198">
+                    <button style="margin-left: 1%;" onclick="submitDAddress5()">Submit</button>
+                </th>
+                <th>
+                    <input style="width: 30%;" id="port5" type="number" placeholder="11111">
+                    <button style="margin-left: 1%;" onclick="submitPort5()">Submit</button>
+                </th>
+            </tr>
+        </table>
 
-    <img src="assets/images/firewall.png" style="position: absolute; bottom: 3%; left: 44%; height: 39%;">
+        <img src="assets/images/firewall.png" style="position: absolute; bottom: 3%; left: 44%; height: 39%;">
 
-    <p class="right" id="destinationAddress5" style="color: white; position: absolute; bottom: 2%; right: 0; float: right;"></p>
-    <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 5%;">
-    <p class="left" id="sourceAddress5" style="color: white; position: absolute; bottom: 2%;"></p>
-    <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 5%;">
+        <p class="right" id="destinationAddress5" style="position: absolute; bottom: 2%;"></p>
+        <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 5%;">
+        <p class="left" id="sourceAddress5" style="position: absolute; bottom: 2%;"></p>
+        <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 5%;">
 
-    <p id="sourceAddress4" style="color: white; position: absolute; bottom: 10.5%; margin-left: 1%;"></p>
-    <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 13%;">
-    <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 13%;">
+        <p class="right" id="destinationAddress4" style="position: absolute; bottom: 10.5%;"></p>
+        <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 13%;">
+        <p class="left" id="sourceAddress4" style="position: absolute; bottom: 10.5%;"></p>
+        <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 13%;">
 
-    <p id="sourceAddress3" style="color: white; position: absolute; bottom: 18%; margin-left: 1%;"></p>
-    <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 21%;">
-    <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 21%;">
+        <p class="right" id="destinationAddress3" style="position: absolute; bottom: 18%;"></p>
+        <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 21%;">
+        <p class="left" id="sourceAddress3" style="position: absolute; bottom: 18%;"></p>
+        <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 21%;">
 
-    <p id="sourceAddress2" style="color: white; position: absolute; bottom: 25.5%; margin-left: 1%;"></p>
-    <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 28%;">
-    <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 28%;">
+        <p class="right" id="destinationAddress2" style="position: absolute; bottom: 25.5%;"></p>
+        <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 28%;">
+        <p class="left" id="sourceAddress2" style="position: absolute; bottom: 25.5%;"></p>
+        <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 28%;">
 
-    <p id="sourceAddress1" style="color: white; position: absolute; bottom: 34%; margin-left: 1%;"></p>
-    <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 37%;">
-    <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 37%;">
+        <p class="right" id="destinationAddress1" style="position: absolute; bottom: 34%;"></p>
+        <img class="right" src="assets/images/computer.png" style="position: absolute; bottom: 37%;">
+        <p class="left" id="sourceAddress1" style="position: absolute; bottom: 34%;"></p>
+        <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 37%;">
 
 
 
-    <div class="moving" id="moving-text1" style="color: white; position: absolute; bottom: 34%;"></div>
-    <div class="moving1" id="moving-text-half1" style="color: white; position: absolute; bottom: 34%;"></div>
+        <div class="moving" id="moving-text1" style="color: white; position: absolute; bottom: 34%;"></div>
+        <div class="moving1" id="moving-text-half1" style="color: white; position: absolute; bottom: 34%;"></div>
 
-    <div class="moving" id="moving-text2" style="color: white; position: absolute; bottom: 25%"></div>
-    <div class="moving" id="moving-text-half2" style="color: white; position: absolute; bottom: 25%"></div>
+        <div class="moving" id="moving-text2" style="color: white; position: absolute; bottom: 25%"></div>
+        <div class="moving" id="moving-text-half2" style="color: white; position: absolute; bottom: 25%"></div>
 
-    <div class="moving" id="moving-text3" style="color: white; position: absolute; bottom: 18%;"></div>
-    <div class="moving" id="moving-text-half3" style="color: white; position: absolute; bottom: 18%;"></div>
+        <div class="moving" id="moving-text3" style="color: white; position: absolute; bottom: 18%;"></div>
+        <div class="moving" id="moving-text-half3" style="color: white; position: absolute; bottom: 18%;"></div>
 
-    <div class="moving" id="moving-text4" style="color: white; position: absolute; bottom: 10%;"></div>
-    <div class="moving" id="moving-text-half4" style="color: white; position: absolute; bottom: 10%;"></div>
+        <div class="moving" id="moving-text4" style="color: white; position: absolute; bottom: 10%;"></div>
+        <div class="moving" id="moving-text-half4" style="color: white; position: absolute; bottom: 10%;"></div>
 
-    <div class="moving" id="moving-text5" style="color: white; position: absolute; bottom: 2%;"></div>
-    <div class="moving" id="moving-text-half5" style="color: white; position: absolute; bottom: 2%;"></div>
-</body>
+        <div class="moving" id="moving-text5" style="color: white; position: absolute; bottom: 2%;"></div>
+        <div class="moving" id="moving-text-half5" style="color: white; position: absolute; bottom: 2%;"></div>
+    </body>
 </html>

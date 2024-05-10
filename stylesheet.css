@@ -75,21 +75,26 @@ body {
 .left {
     margin-top: auto;
     margin-right: 1%;
-    margin-bottom: 0.2%;
+    margin-bottom: 0.1%;
+    margin-top: 0.1%;
     margin-left: 1%;
     width: 3%;
+
+    color: white;
 }
 
 .right {
-    margin-top: auto;
+    margin-top: 0.1%;
     margin-left: 1%;
-    margin-bottom: 0.2%;
+    margin-bottom: 0.1%;
     margin-right: 1%;
 
-    position: fixed;
+    position: absolute;
     right: 0;
     bottom: 0;
     width: 3%;
+
+    color: white;
 }
 
 .moving {
