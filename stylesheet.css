@@ -63,12 +63,12 @@ body {
 }
 
 @keyframes bouncetext {
-    0% { transform: translateX(0%); }
-    100% { transform: translateX(96%); }  /* Text reaches the center at 50% */
+    0% { transform: translateX(1%); }
+    100% { transform: translateX(92%); }
 }
 
 @keyframes bouncetextwall {
-    0% { transform: translateX(0%); }
+    0% { transform: translateX(1%); }
     100% { transform: translateX(44%); }  /* Text reaches the center at 50% */
 }
 
@@ -95,4 +95,15 @@ body {
 .moving {
     position: fixed;
     bottom: 0;
+
+    margin: 3%;
+    width: 100%;
+}
+
+.moving1 {
+    position: fixed;
+    bottom: 0;
+
+    margin: 3%;
+    width: 90%;
 }

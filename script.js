@@ -135,20 +135,19 @@ if (GlobalIsChecked5 == true) {
     document.getElementById('moving-text5').innerHTML = null;
     document.getElementById('moving-text-half5').innerHTML = GlobalProtocol5;
 }
-window.onload = function(){
+window.onload = function() {
     document.getElementById('destinationAddress1').innerHTML = Globaldaddress1;
     document.getElementById('destinationAddress2').innerHTML = Globaldaddress2;
     document.getElementById('destinationAddress3').innerHTML = Globaldaddress3;
     document.getElementById('destinationAddress4').innerHTML = Globaldaddress4;
     document.getElementById('destinationAddress5').innerHTML = Globaldaddress5;
-};
-
-window.onload = function(){
+    
     document.getElementById('sourceAddress1').innerHTML = Globaltaddress1;
     document.getElementById('sourceAddress2').innerHTML = Globaltaddress2;
     document.getElementById('sourceAddress3').innerHTML = Globaltaddress3;
     document.getElementById('sourceAddress4').innerHTML = Globaltaddress4;
     document.getElementById('sourceAddress5').innerHTML = Globaltaddress5;
+
 };
 
 document.getElementById('ICMP').innerHTML = GlobalProtocol1;
