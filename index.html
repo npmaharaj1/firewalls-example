@@ -24,6 +24,7 @@
         <tr>
             <th>Allowed?</th>
             <th>IP Address</th>
+            <th>Protocol</th>
             <th>Destination</th>
             <th>Port</th>
         </tr>
@@ -34,6 +35,9 @@
             <th>
                 <input id="t-address1" type="text" placeholder="192.168.1.89">
                 <button style="margin-left: 1%;" onclick="submitTAddress1()" >Submit</button>
+            </th>
+            <th>
+                <div id="ICMP" style="color: white; margin: 3%;"></div>
             </th>
             <th>
                 <input id="d-address1" type="text" placeholder="192.168.1.168">
@@ -55,6 +59,9 @@
                 <button style="margin-left: 1%;" onclick="submitTAddress2()" >Submit</button>
             </th>
             <th>
+                <div id="TCP" style="color: white; margin: 3%;"></div>
+            </th>
+            <th>
                 <input id="d-address2" type="text" placeholder="10.1.1.167">
                 <button style="margin-left: 1%;" onclick="submitDAddress2()">Submit</button>
             </th>
@@ -72,6 +79,9 @@
             <th>
                 <input id="t-address3" type="text" placeholder="192.168.4.23">
                 <button style="margin-left: 1%;" onclick="submitTAddress3()" >Submit</button>
+            </th>
+            <th>
+                <div id="IGMP" style="color: white; margin: 3%;"></div>
             </th>
             <th>
                 <input id="d-address3" type="text" placeholder="192.168.4.98">
@@ -93,6 +103,9 @@
                 <button style="margin-left: 1%;" onclick="submitTAddress4()" >Submit</button>
             </th>
             <th>
+                <div id="RAW" style="color: white; margin: 3%;"></div>
+            </th>
+            <th>
                 <input id="d-address4" type="text" placeholder="10.13.37.98">
                 <button style="margin-left: 1%;" onclick="submitDAddress4()">Submit</button>
             </th>
@@ -112,6 +125,9 @@
                 <button style="margin-left: 1%;" onclick="submitTAddress5()" >Submit</button>
             </th>
             <th>
+                <div id="UDP" style="color: white; margin: 3%;"></div>
+            </th>
+            <th>
                 <input id="d-address5" type="text" placeholder="10.34.23.198">
                 <button style="margin-left: 1%;" onclick="submitDAddress5()">Submit</button>
             </th>
@@ -125,13 +141,51 @@
     <!--Printout Button-->
     <!-- <button onclick="printout()">Print everything!</button> -->
 
-    <img src="assets/images/firewall.png" style="position: absolute; top: 50%; left: 44%; z-index: 0;">
+    <img src="assets/images/firewall.png" style="position: absolute; top: 58%; left: 44%;">
 
-    <img src="assets/images/computer.png" style="position: absolute; margin-top: 18%; z-index: 0; width: 3%;">
-    <img src="assets/images/computer.png" style="position: absolute; margin-top: 22%; z-index: 0; width: 3%;">
-    <img src="assets/images/computer.png" style="position: absolute; margin-top: 26%; z-index: 0; width: 3%;">
-    <img src="assets/images/computer.png" style="position: absolute; margin-top: 30%; z-index: 0; width: 3%;">
-    <img src="assets/images/computer.png" style="position: absolute; margin-top: 34%; z-index: 0; width: 3%;">
+    <!-- 
+    <img class="left" src="assets/images/computer.png" style="width: 3%;">
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <p id="sourceAddress1" style="color: white; margin: 0.2%;"></p>
+
+    <img class="left" src="assets/images/computer.png" style="width: 3%;">
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <p id="sourceAddress2" style="color: white; margin: 0.2%;"></p>
+    
+    <img class="left" src="assets/images/computer.png" style="width: 3%;">
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <p id="sourceAddress3" style="color: white; margin: 0.2%;"></p>
+    
+    <img class="left" src="assets/images/computer.png" style="width: 3%;">
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <p id="sourceAddress4" style="color: white; margin: 0.2%;"></p>
+    
+    <img class="left" src="assets/images/computer.png" style="width: 3%;">
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <p id="sourceAddress5" style="color: white; margin: 0.2%;"></p>
+  -->
+
+    <p id="sourceAddress5" style="color: white; margin: 0.2%; position: absolute; bottom: 3%;"></p>
+    <img class="right" src="assets/images/computer.png" style="margin-bottom: 6%;">
+    <img class="left" src="assets/images/computer.png" style="position: absolute; bottom: 6%;">
+
+    <p id="sourceAddress4" style="color: white; margin: 0.2%; position: absolute; bottom: 10.5%;"></p>
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <img class="left" src="assets/images/computer.png" style="width: 3%; position: absolute; bottom: 13%;">
+
+    <p id="sourceAddress3" style="color: white; margin: 0.2%; position: absolute; bottom: 18%;"></p>
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <img class="left" src="assets/images/computer.png" style="width: 3%; position: absolute; bottom: 21%;">
+
+    <p id="sourceAddress2" style="color: white; margin: 0.2%; position: absolute; bottom: 25.5%;"></p>
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <img class="left" src="assets/images/computer.png" style="width: 3%; position: absolute; bottom: 29%;">
+
+    <p id="sourceAddress1" style="color: white; margin: 0.2%; position: absolute; bottom: 34%;"></p>
+    <img class="right" src="assets/images/computer.png" style="width: 3%;">
+    <img class="left" src="assets/images/computer.png" style="width: 3%; position: absolute; bottom: 37%;">
+
+
 
     <div id="moving-text1" style="color: white; margin: 1%; margin-top: 18.5%;"></div>
     <div id="moving-text-half1" style="color: white; margin: 3%;"></div>
@@ -143,11 +197,5 @@
     <div id="moving-text-half4" style="color: white; margin: 3%;"></div>
     <div id="moving-text5" style="color: white; margin: 3%;"></div>
     <div id="moving-text-half5" style="color: white; margin: 3%;"></div>
-
-    <p id="destinationAddress1" style="color: white;"></p>
-    <p id="destinationAddress2" style="color: white;"></p>
-    <p id="destinationAddress3" style="color: white;"></p>
-    <p id="destinationAddress4" style="color: white;"></p>
-    <p id="destinationAddress5" style="color: white;"></p>
 </body>
 </html>

@@ -64,10 +64,25 @@ body {
 
 @keyframes bouncetext {
     0% { transform: translateX(0%); }
-    100% { transform: translateX(89%); }  /* Text reaches the center at 50% */
+    100% { transform: translateX(96%); }  /* Text reaches the center at 50% */
 }
 
 @keyframes bouncetextwall {
     0% { transform: translateX(0%); }
     100% { transform: translateX(44%); }  /* Text reaches the center at 50% */
+}
+
+.left {
+    margin-top: auto;
+    margin-right: 1%;
+    margin-bottom: 0.2%;
+    margin-left: 1%;
+    width: 3%;
+}
+
+.right {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 3%;
 }

@@ -5,11 +5,11 @@ function checkBox2() {
         GlobalIsChecked2 = checkBox.checked;
     }
     if (GlobalIsChecked2 == false) {
-        document.getElementById('moving-text2').innerHTML = Globaltaddress2;
+        document.getElementById('moving-text2').innerHTML = GlobalProtocol2;
         document.getElementById('moving-text-half2').innerHTML = null;
     } else {
         document.getElementById('moving-text2').innerHTML = null;
-        document.getElementById('moving-text-half2').innerHTML = Globaltaddress2;
+        document.getElementById('moving-text-half2').innerHTML = GlobalProtocol2;
     }
     checkBox.addEventListener('change', handleCheckboxChange);
 }
