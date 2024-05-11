@@ -100,7 +100,7 @@ if (GlobalIsChecked5 == true) {
     document.getElementById('moving-text5').innerHTML = null;
     document.getElementById('moving-text-half5').innerHTML = GlobalProtocol5;
 }
-window.onload = function() {
+function pageload() {
     document.getElementById('destinationAddress1').innerHTML = Globaldaddress1 + ":" + Globalport1;
     document.getElementById('destinationAddress2').innerHTML = Globaldaddress2 + ":" + Globalport2;
     document.getElementById('destinationAddress3').innerHTML = Globaldaddress3 + ":" + Globalport3;
@@ -113,6 +113,12 @@ window.onload = function() {
     document.getElementById('sourceAddress4').innerHTML = Globaltaddress4;
     document.getElementById('sourceAddress5').innerHTML = Globaltaddress5;
 
+    document.getElementById('port1').innerHTML = Globalport1;
+    document.getElementById('port2').innerHTML = Globalport2;
+    document.getElementById('port3').innerHTML = Globalport3;
+    document.getElementById('port4').innerHTML = Globalport4;
+    document.getElementById('port5').innerHTML = Globalport5;
+
 };
 
 document.getElementById('ICMP').innerHTML = GlobalProtocol1;
@@ -120,3 +126,5 @@ document.getElementById('TCP').innerHTML = GlobalProtocol2;
 document.getElementById('IGMP').innerHTML = GlobalProtocol3;
 document.getElementById('RAW').innerHTML = GlobalProtocol4;
 document.getElementById('UDP').innerHTML = GlobalProtocol5;
+
+window.setInterval(pageload, 100);
