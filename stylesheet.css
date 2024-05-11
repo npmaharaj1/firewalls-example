@@ -97,6 +97,19 @@ body {
     color: white;
 }
 
+.rightText {
+    margin-top: 0.1%;
+    margin-left: 1%;
+    margin-bottom: 0.1%;
+    margin-right: 1%;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    color: white;
+}
+
 .moving {
     position: fixed;
     bottom: 0;
